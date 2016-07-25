@@ -1,0 +1,30 @@
+{
+  "name": "casa-do-codigo",
+  "version": "1.0.0",
+  "description": "descricao inicial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williansmartins/node-js-express.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "js"
+  ],
+  "author": "willians martins de morais",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/williansmartins/node-js-express/issues"
+  },
+  "homepage": "https://github.com/williansmartins/node-js-express#readme",
+  "dependencies": {
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "express-load": "^1.1.15",
+    "mysql": "^2.11.1"
+  }
+}
