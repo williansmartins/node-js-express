@@ -9,4 +9,19 @@ module.exports = function(app){
 
 		connection.end();
 	});
+
+	app.get('/produtos/form', function(req, res){
+	  	res.render('produtos/form');
+	});
+
+	app.get('/produtos/salva', function(req, res){
+		var connection = app.infra.connectionFactory();
+		var ProdutosDAO = new app.infra.ProdutosDAO(connection);
+
+		ProdutosDAO.salva(function(err, results) {
+		  res.render('produtos/lista', {lista:results});
+		});
+
+		connection.end();
+	});
 }
